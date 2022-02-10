@@ -168,6 +168,7 @@ fuse-vertical-navigation {
         display: flex;
         flex: 1 1 auto;
         flex-direction: column;
+        border-left: 2px solid #bdbdbd;
         top: 0;
         bottom: 0;
         left: #{$fuse-vertical-navigation-width}px;
@@ -507,7 +508,8 @@ fuse-vertical-navigation-collapsable-item {
 
                 &.fuse-vertical-navigation-item-active,
                 &.fuse-vertical-navigation-item-active-forced {
-                    @apply bg-gray-800 bg-opacity-5 dark:bg-white dark:bg-opacity-12;
+                    background-color: #598C3F !important;
+                    @apply text-white bg-opacity-5 dark:bg-white dark:bg-opacity-12;
 
                     .fuse-vertical-navigation-item-icon {
                         @apply opacity-100;
@@ -527,7 +529,8 @@ fuse-vertical-navigation-collapsable-item {
             &:not(.fuse-vertical-navigation-item-active-forced):not(.fuse-vertical-navigation-item-active):not(.fuse-vertical-navigation-item-disabled) {
 
                 &:hover {
-                    @apply bg-gray-800 bg-opacity-5 dark:bg-white dark:bg-opacity-12;
+                    @apply bg-opacity-5 text-white dark:bg-white dark:bg-opacity-12;
+                    background-color: #598C3F !important;
 
                     .fuse-vertical-navigation-item-icon {
                         @apply opacity-100;
