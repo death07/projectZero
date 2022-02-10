@@ -12,7 +12,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 id: 'profile',
                 title: 'Profile',
                 type: 'basic',
-                link: 'ods/profle/my-profile'
+                link: '/ods/profile/my-profile'
             }
         ]
     },
