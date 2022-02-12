@@ -68,9 +68,9 @@ export const compactNavigation: FuseNavigationItem[] = [
     {
         id: 'catalogue',
         title: 'Catalogue',
-        type: 'aside',
+        type: 'basic',
         icon: 'heroicons_outline:chart-pie',
-        children: []
+        link: '/ods/catalogue'
     },
     {
         id: 'administration',

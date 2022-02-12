@@ -80,6 +80,7 @@ export const appRoutes: Route[] = [
             },
             { path: 'profile', loadChildren: () => import('app/modules/admin/profile/profile.module').then(m => m.ProfileModule) },
             { path: 'accounts', loadChildren: () => import('app/modules/admin/accounts/accounts.module').then(m => m.AccountsModule) },
+            { path: 'catalogue', loadChildren: () => import('app/modules/admin/catalogue/catalogue.module').then(m => m.CatalogueModule) },
         ]
     }
 ];
