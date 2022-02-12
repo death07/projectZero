@@ -79,6 +79,7 @@ export const appRoutes: Route[] = [
                 redirectTo: 'profile',
             },
             { path: 'profile', loadChildren: () => import('app/modules/admin/profile/profile.module').then(m => m.ProfileModule) },
+            { path: 'accounts', loadChildren: () => import('app/modules/admin/accounts/accounts.module').then(m => m.AccountsModule) },
         ]
     }
 ];

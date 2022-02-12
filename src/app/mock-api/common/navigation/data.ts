@@ -21,7 +21,20 @@ export const defaultNavigation: FuseNavigationItem[] = [
         title: 'Accounts',
         type: 'aside',
         icon: 'heroicons_outline:chart-pie',
-        children: []
+        children: [
+            {
+                id: 'partner',
+                title: 'Partner Accounts',
+                type: 'basic',
+                link: '/ods/accounts/partners'
+            },
+            {
+                id: 'user',
+                title: 'User Accounts',
+                type: 'basic',
+                link: '/ods/accounts/users'
+            }
+        ]
     },
     {
         id: 'catalogue',
