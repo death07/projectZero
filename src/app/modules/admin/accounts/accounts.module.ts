@@ -13,6 +13,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { SharedModule } from 'app/shared/shared.module';
 
 
 
@@ -34,6 +38,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatMenuModule,
     MatRippleModule,
     MatProgressBarModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatTooltipModule,
+    SharedModule,
   ]
 })
 export class AccountsModule { }
