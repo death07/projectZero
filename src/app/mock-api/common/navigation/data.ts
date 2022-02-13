@@ -49,6 +49,32 @@ export const defaultNavigation: FuseNavigationItem[] = [
         type: 'aside',
         icon: 'heroicons_outline:chart-pie',
         children: []
+    },
+    {
+        id: 'order',
+        title: 'Order',
+        type: 'aside',
+        icon: 'heroicons_outline:chart-pie',
+        children: [
+            {
+                id: 'orders',
+                title: 'Orders',
+                type: 'basic',
+                link: '/ods/order-management/orders'
+            },
+            {
+                id: 'drafts',
+                title: 'Drafts',
+                type: 'basic',
+                link: '/ods/order-management/drafts'
+            },
+            {
+                id: 'template',
+                title: 'Templates',
+                type: 'basic',
+                link: '/ods/order-management/templates'
+            }
+        ]
     }
 ];
 export const compactNavigation: FuseNavigationItem[] = [
@@ -75,6 +101,13 @@ export const compactNavigation: FuseNavigationItem[] = [
     {
         id: 'administration',
         title: 'Administration',
+        type: 'aside',
+        icon: 'heroicons_outline:chart-pie',
+        children: []
+    },
+    {
+        id: 'order',
+        title: 'Order',
         type: 'aside',
         icon: 'heroicons_outline:chart-pie',
         children: []

@@ -81,6 +81,7 @@ export const appRoutes: Route[] = [
             { path: 'profile', loadChildren: () => import('app/modules/admin/profile/profile.module').then(m => m.ProfileModule) },
             { path: 'accounts', loadChildren: () => import('app/modules/admin/accounts/accounts.module').then(m => m.AccountsModule) },
             { path: 'catalogue', loadChildren: () => import('app/modules/admin/catalogue/catalogue.module').then(m => m.CatalogueModule) },
+            { path: 'order-management', loadChildren: () => import('app/modules/admin/order-management/order-management.module').then(m => m.OrderManagementModule) },
         ]
     }
 ];
