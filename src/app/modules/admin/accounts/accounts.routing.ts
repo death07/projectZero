@@ -1,6 +1,6 @@
 import { Route } from "@angular/router";
-import { UserComponent } from "app/layout/common/user/user.component";
 import { PartnersComponent } from "./partners/partners.component";
+import { UsersComponent } from "./users/users.component";
 
 export const accountsRoute: Route[] = [
     {
@@ -13,6 +13,6 @@ export const accountsRoute: Route[] = [
     },
     {
         path: 'users',
-        component: UserComponent
+        component: UsersComponent
     }
 ]; 

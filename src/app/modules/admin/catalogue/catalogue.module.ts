@@ -16,12 +16,22 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'app/shared/shared.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatRadioModule } from '@angular/material/radio';
+import { CatalogueDetailsComponent } from './catalogue-details/catalogue-details.component';
+import { CatalogueComponent } from './catalogue-details/catalogue/catalogue.component';
+import { GalleryComponent } from './catalogue-details/gallery/gallery.component';
+import { QrbarComponent } from './catalogue-details/qrbar/qrbar.component';
 
 
 
 @NgModule({
   declarations: [
-    CatalogueListComponent
+    CatalogueListComponent,
+    CatalogueDetailsComponent,
+    CatalogueComponent,
+    GalleryComponent,
+    QrbarComponent
   ],
   imports: [
     CommonModule,
@@ -40,6 +50,8 @@ import { SharedModule } from 'app/shared/shared.module';
     MatPaginatorModule,
     MatTooltipModule,
     SharedModule,
+    MatSidenavModule,
+    MatRadioModule
   ]
 })
 export class CatalogueModule { }

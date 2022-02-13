@@ -1,0 +1,168 @@
+<div class="flex w-full flex-col pr-12 gap-4 overflow-y-auto max-h-142">
+    <div class="flex flex-row w-full items-center justify-between mb-4">
+        <div class="flex flex-col">
+            <div class="text-lg font-semibold">Catalogue Details</div>
+            <div>Status : Active</div>
+        </div>
+        <div class="flex flex-row">
+            <button class="ml-4 ods-bg uppercase text-white" mat-flat-button>
+                Edit
+            </button>
+
+            <button class="ml-4 ods-bg text-white" mat-flat-button>
+                <mat-icon
+                    [svgIcon]="'heroicons_outline:dots-vertical'"
+                ></mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="w-1/2 flex">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Product Number*</h4>
+                <div class="mt-1 text-secondary">Carbon123</div>
+            </div>
+        </div>
+        <div class="flex-auto">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Company Name*</h4>
+                <div class="mt-1 text-secondary">The Pharma</div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="flex-auto">
+            <div class="prose-sm">
+                <h4 class="-mb-1 font-semibold">Description*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam porro architecto in perspiciatis iure?
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="w-1/2 flex">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Indication*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+        <div class="flex-auto">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Generic Name*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="flex-auto">
+            <div class="prose-sm">
+                <h4 class="-mb-1 font-semibold">Dosage Instruction*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="w-1/2 flex">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Prescription Classification*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+        <div class="flex-auto">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Dosage Strenght*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="w-1/2 flex">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Manufacturer*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+        <div class="flex-auto">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Brand*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="w-1/2 flex">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Packaging Type*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+        <div class="flex-auto">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Package*</h4>
+                <div class="mt-1 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="w-1/2 flex">
+            <mat-radio-group aria-label="Select an option" value="1" disabled>
+                <mat-radio-button value="1">Retail Price</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="flex-auto">
+            <mat-radio-group aria-label="Select an option" disabled>
+                <mat-radio-button value="1">Whole price</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="w-1/2 flex">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">Price*</h4>
+                <div class="mt-1 text-secondary">PHP 9.00</div>
+            </div>
+        </div>
+        <div class="flex-auto flex flex-row justify-between">
+            <div class="prose prose-sm col-span-3 w-1/2">
+                <h4 class="-mb-1">Min*</h4>
+                <div class="mt-1 text-secondary">PHP 5.00</div>
+            </div>
+
+            <div class="prose prose-sm col-span-3 flex-auto">
+                <h4 class="-mb-1">Max*</h4>
+                <div class="mt-1 text-secondary">PHP 10.00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-row w-full items-start justify-between">
+        <div class="w-1/2 flex">
+            <div class="prose prose-sm col-span-3">
+                <h4 class="-mb-1">SKU Number*</h4>
+                <div class="mt-1 text-secondary">7 21321 0</div>
+            </div>
+        </div>
+    </div>
+</div>

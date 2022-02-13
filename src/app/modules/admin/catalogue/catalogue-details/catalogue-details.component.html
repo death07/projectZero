@@ -1,0 +1,96 @@
+<div class="absolute inset-0 flex flex-col min-w-0 overflow-hidden">
+    <!-- Header -->
+    <div
+        class="flex flex-col sm:flex-row flex-0 sm:items-center sm:justify-between p-6 sm:py-8 sm:px-10 border-b dark:bg-transparent"
+    >
+        <div class="flex-1 min-w-0">
+            <!-- Breadcrumbs -->
+            <div>
+                <div
+                    class="flex items-center justify-end sm:flex flex-wrap font-medium"
+                >
+                    <div>
+                        <a class="whitespace-nowrap xlog-primary-fg">
+                            Catalogue Management Listing /
+                            <strong> Catalogue Details Page</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex sm:hidden">
+                    <a
+                        class="inline-flex items-center -ml-1.5 text-secondary font-medium"
+                    >
+                        <mat-icon
+                            class="icon-size-5 text-secondary"
+                            [svgIcon]="'heroicons_solid:chevron-left'"
+                        ></mat-icon>
+                        <span class="ml-1">Back</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-row justify-between items-center mt-4">
+                <div
+                    class="text-2xl font-extrabold tracking-tight leading-none"
+                >
+                    Catalogue Details Page
+                </div>
+
+                <div class="flex flex-col text-right">
+                    <div>Product Name: Carasdsa</div>
+                    <div>Product Id: D321421</div>
+                </div>
+            </div>
+
+            <!-- Title -->
+        </div>
+    </div>
+    <div class="inset-x-0 bottom-0" *ngIf="isLoading">
+        <mat-progress-bar [mode]="'indeterminate'"></mat-progress-bar>
+    </div>
+    <div class="flex flex-col p-4">
+        <div class="bg-card rounded-lg flex flex-row">
+            <div class="w-100 px-12 flex flex-col gap-4 py-8">
+                <ng-container *ngFor="let side of sidebar; let i = index">
+                    <div
+                        class="rounded-md cursor-pointer bg-gray-200 hover:ring hover:ring-green-600 flex flex-col p-4"
+                        [ngClass]="{
+                            'ring ring-ods ': side.isActive
+                        }"
+                        matRipple
+                        [matRippleCentered]="centered"
+                        [matRippleDisabled]="disabled"
+                        [matRippleUnbounded]="unbounded"
+                        [matRippleRadius]="radius"
+                        [matRippleColor]="color"
+                        (click)="changePage(side, i)"
+                    >
+                        <div
+                            [ngClass]="{
+                                'text-ods font-semibold': side.isActive
+                            }"
+                        >
+                            {{ side.Title }}
+                        </div>
+                        <div>{{ side.description }}</div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="flex-auto py-8">
+                <ng-container [ngSwitch]="conditionExpression">
+                    <div *ngSwitchCase="'catalogue'">
+                        <catalogue></catalogue>
+                    </div>
+                    <div *ngSwitchCase="'gallery'">
+                        <gallery></gallery>
+                    </div>
+                    <div *ngSwitchCase="'qrcode'">
+                        <qrbar></qrbar>
+                    </div>
+                    <div *ngSwitchDefault>
+                        <catalogue></catalogue>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
